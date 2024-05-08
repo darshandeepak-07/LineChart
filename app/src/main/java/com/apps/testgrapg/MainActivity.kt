@@ -16,7 +16,7 @@ import com.apps.testgrapg.ui.theme.TestGrapgTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val list = listOf(2f,1f,5f,4f)
+        val list = listOf(2f,1f,5f,4f,7f)
         var sum = 0
         list.forEach { value->
             sum+= value.toInt()
@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                 ) {
 
                     Text(text = "You have earned Rs ${sum}")
-                    LineGraph(xLabels = listOf("Dec 2023","Jan 2024","Feb 2024","Mar 2024","Apr 2024"), yData = listOf(2f,1f,5f,4f))
+                    LineGraph(xLabels = listOf("Dec 2023","Jan 2024","Feb 2024","Mar 2024","Apr 2024"), yData = listOf(2f,1f,5f,4f,7f))
                 }
             }
         }
